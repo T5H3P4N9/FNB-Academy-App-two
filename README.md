@@ -1,6 +1,7 @@
 # 🦁 Zoo Map Web Page
 
-This project is a simple and visually structured HTML web page designed to display a zoo map along with navigation to related sections like animals, places, weather, and feedback. It's part of a beginner-friendly front-end project using only **HTML** and **CSS**.
+This project is a simple and visually structured HTML web page designed to display a zoo map along with navigation to related sections like animals, places, weather, and feedback. It's part of a beginner-friendly front-end project using only **HTML**, **CSS**
+and **JS** 
 
 ## 📁 Project Structure
 project-folder/
@@ -28,6 +29,7 @@ project-folder/
 
 - HTML5
 - CSS3
+- JavaScript
 
 ## 📸 Preview
 
