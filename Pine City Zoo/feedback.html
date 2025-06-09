@@ -21,7 +21,7 @@
                             <input type="text" placeholder="Your Name" id="name"/><br>
                             <input type="text" placeholder="Your Email" id="email"/><br>
                             <textarea placeholder="Type your message here"></textarea>
-                            <a class="button" href="message-received.html">SUBMIT</a>
+                            <a class="button" href="#" onclick="validateForm(event)">SUBMIT</a>
                                 </div>
                             </div>
                         </div>
@@ -29,5 +29,35 @@
                          <a href="weather.html">WEATHER</a>
                             <a href="#">FEEDBACK</a>
                             </div>
+
+                            <script>
+function validateForm(event) {
+    // Prevent the link from immediately navigating away
+    event.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.querySelector("textarea").value.trim();
+
+    // Simple email regex pattern
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validation checks
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // If all is good, navigate to the confirmation page
+    window.location.href = "message-received.html";
+}
+</script>
+
                         </body>
                     </html>
